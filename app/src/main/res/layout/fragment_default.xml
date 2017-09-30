@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.avalanche.hello.helloavalanche.Default"
+    android:id="@+id/fragment_default">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:text="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/companyName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:text="@string/app_tag_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/companyTagLine"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/instruction_swipe_explore"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textStyle="normal"
+        android:textAllCaps="true"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

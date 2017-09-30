@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Avalanche</string>
+    <string name="title_activity_drawer">Drawer</string>
+
+    <string name="app_tag_line">No one\'s stopping IT</string>
+
+    <string name="instruction_swipe_explore">Swipe to explore</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="avalanche_description">A large body of rock and snow falling suddenly on a mountain. Once it happens, it happens. It brings permanent change to its surrounding. No one is stopping it.</string>
+
+    <string name="people">Men That Started Avalanche</string>
+    <string name="people_desc">These are the people behind the Avalanche. Like what they represent, they are unstoppable, working behind the curtains to provide the best possible.</string>
+    <string name="boss">The Boss</string>
+    <string name="boss_desc">No words for her. She\'s the boss.</string>
+
+    <string name="mission">Mission</string>
+    <string name="mission_desc">To provide realistic, practical, and state of the art software solutions to clients\' problems.</string>
+    <string name="vision">Vision</string>
+    <string name="vision_desc">A state of the art software providing company with a wide range of expertise catering to various business’s needs.</string>
+    <string name="business_proc">How We Do Business</string>
+    <string name="business_proc_desc">STEP 1: Client meet up \nSTEP 2: Software Development Process \nSTEP 3: Deployment</string>
+
+</resources>

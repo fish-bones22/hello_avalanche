@@ -58,7 +58,7 @@
                     android:paddingBottom="30dp" />
 
                 <TextView
-                    android:text="@string/boss"
+                    android:text="@string/ej"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -73,7 +73,7 @@
                     android:layout_weight="0.50" />
 
                 <TextView
-                    android:text="@string/boss_desc"
+                    android:text="@string/ej_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -81,7 +81,7 @@
                     android:paddingBottom="30dp" />
 
                 <TextView
-                    android:text="@string/boss"
+                    android:text="@string/jerome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -96,7 +96,7 @@
                     android:layout_weight="0.50" />
 
                 <TextView
-                    android:text="@string/boss_desc"
+                    android:text="@string/jerome_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -104,7 +104,7 @@
                     android:paddingBottom="30dp" />
 
                 <TextView
-                    android:text="@string/boss"
+                    android:text="@string/sam"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -119,7 +119,7 @@
                     android:layout_weight="0.50" />
 
                 <TextView
-                    android:text="@string/boss_desc"
+                    android:text="@string/sam_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -127,7 +127,7 @@
                     android:paddingBottom="30dp" />
 
                 <TextView
-                    android:text="@string/boss"
+                    android:text="@string/jd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -142,7 +142,7 @@
                     android:layout_weight="0.50" />
 
                 <TextView
-                    android:text="@string/boss_desc"
+                    android:text="@string/jd_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -150,7 +150,7 @@
                     android:paddingBottom="30dp" />
 
                 <TextView
-                    android:text="@string/boss"
+                    android:text="@string/marx"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -165,7 +165,7 @@
                     android:layout_weight="0.50" />
 
                 <TextView
-                    android:text="@string/boss_desc"
+                    android:text="@string/marx_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"

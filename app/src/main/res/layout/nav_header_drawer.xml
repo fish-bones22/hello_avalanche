@@ -19,16 +19,17 @@
         <!--android:paddingTop="@dimen/nav_header_vertical_spacing"-->
         <!--app:srcCompat="@android:drawable/sym_def_app_icon" />-->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <ImageView
+        android:layout_width="148dp"
+        android:layout_height="33dp"
+        app:srcCompat="@mipmap/avalanche_text"
+        android:id="@+id/imageView" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_tag_line" />
+        android:text="@string/app_tag_line"
+        android:textAllCaps="true" />
 
 </LinearLayout>

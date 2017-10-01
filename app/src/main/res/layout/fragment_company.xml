@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,21 +8,77 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <LinearLayout
-        android:orientation="vertical"
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:text="@string/app_name"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            android:orientation="vertical">
 
-        <TextView
-            android:text="@string/avalanche_description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-    </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                app:srcCompat="@mipmap/app_logo" />
+
+            <TextView
+                android:text="@string/app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textAllCaps="true"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:text="@string/avalanche_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/icon_beginning" />
+
+            <TextView
+                android:text="@string/history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textAllCaps="true"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:text="@string/history_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/icon_next" />
+
+            <TextView
+                android:text="@string/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textAllCaps="true"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:text="@string/next_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>

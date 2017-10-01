@@ -13,10 +13,32 @@
 
     <string name="avalanche_description">A large body of rock and snow falling suddenly on a mountain. Once it happens, it happens. It brings permanent change to its surrounding. No one is stopping it.</string>
 
+    <string name="history">The Beginning</string>
+    <string name="history_desc">When passionate people come together, expect something to happen. The Avalanche was started by six engineers well known in their field, aiming for excellence, equipped with their passion and excellence. Together, they started the unstoppable.</string>
+
+    <string name="next">What\'s Next</string>
+    <string name="next_desc">To be the best, we need to give the best. We aim to be the better choice among business owners when it comes to software solutions..</string>
+
     <string name="people">Men That Started Avalanche</string>
     <string name="people_desc">These are the people behind the Avalanche. Like what they represent, they are unstoppable, working behind the curtains to provide the best possible.</string>
+
     <string name="boss">The Boss</string>
     <string name="boss_desc">No words for her. She\'s the boss.</string>
+
+    <string name="ej">The Programmer</string>
+    <string name="ej_desc">Specializes in designing user interfaces by developing functional and smooth, easy to operate and eye catching websites. Write web pages by a combination of different languages, perform website maintenance and enhancements and providing assistance to the back end developers in troubleshooting and devleoping.</string>
+
+    <string name="jerome">The QA Junkie</string>
+    <string name="jerome_desc">A junkie who specializes in quality assurance, which means testing out every app\'s function, every app\'s non-functional function, and everything else functional and non-functional.</string>
+
+    <string name="sam">The Maker</string>
+    <string name="sam_desc">He makes things. He unmakes them too.</string>
+
+    <string name="jd">The Sleeper</string>
+    <string name="jd_desc">Special skill: He can sleiiiirfffy7tg58v&#8230;</string>
+
+    <string name="marx">The Frustrated Designer</string>
+    <string name="marx_desc">He makes sure everything is user-friendly where he is critical on balancing aesthetics and functionality of a product. He dreams to be a graphic design freelancer someday but ended up as a "free-nalang-sir".</string>
 
     <string name="mission">Mission</string>
     <string name="mission_desc">To provide realistic, practical, and state of the art software solutions to clients\' problems.</string>
@@ -24,5 +46,8 @@
     <string name="vision_desc">A state of the art software providing company with a wide range of expertise catering to various business’s needs.</string>
     <string name="business_proc">How We Do Business</string>
     <string name="business_proc_desc">STEP 1: Client meet up \nSTEP 2: Software Development Process \nSTEP 3: Deployment</string>
+
+    <string name="about">The Avalanche</string>
+    <string name="about_desc">Providing ground-breaking software for earth-shaking problems of businesses.</string>
 
 </resources>

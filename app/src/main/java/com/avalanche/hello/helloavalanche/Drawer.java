@@ -102,7 +102,7 @@ public class Drawer extends AppCompatActivity
         } else if (id == R.id.nav_plan) {
             fragmentId = R.layout.fragment_plan;
         } else if (id == R.id.nav_about) {
-
+            fragmentId = R.layout.fragment_about;
         } else {
             fragmentId = R.layout.fragment_default;
         }

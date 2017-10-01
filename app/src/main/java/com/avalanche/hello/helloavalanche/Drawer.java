@@ -1,11 +1,17 @@
 package com.avalanche.hello.helloavalanche;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.app.FragmentManager;
+import android.support.v4.view.GestureDetectorCompat;
+import android.support.v4.view.MotionEventCompat;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,27 +22,25 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 public class Drawer extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, GestureDetector.OnGestureListener {
 
     private View currentView;
+
+    private GestureDetector gestureDetector;
+
+    private MediaPlayer bgMusic;
+    private MediaPlayer flingFx;
+    private MediaPlayer clickFx;
+    private Runnable r;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer);
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -46,6 +50,38 @@ public class Drawer extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        // Load background sounds and music
+        bgMusic = MediaPlayer.create(this, R.raw.bg_music);
+        flingFx = MediaPlayer.create(this, R.raw.sfx_swish_1);
+
+        bgMusic.setLooping(true);
+
+        // Create a Runnable to play background music at a separate thread
+        r = new Runnable() {
+            @Override
+            public void run() {
+                bgMusic.start();
+            }
+        };
+
+        gestureDetector = new GestureDetector(this, this);
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        new Thread(r).start();
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (bgMusic != null)
+            bgMusic.stop();
+        if (flingFx != null)
+            flingFx.stop();
+        super.onDestroy();
     }
 
     @Override
@@ -113,6 +149,84 @@ public class Drawer extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    @Override
+    public boolean onFling(MotionEvent motionEvent1, MotionEvent motionEvent2, float X, float Y) {
+
+        // Swipe Up
+        if(motionEvent1.getY() - motionEvent2.getY() > 50){
+            Toast.makeText(this, "Up", Toast.LENGTH_LONG);
+            flingFx.start();
+            return true;
+        }
+        // Swipe Down
+        if(motionEvent2.getY() - motionEvent1.getY() > 50){
+            Toast.makeText(this, "Down", Toast.LENGTH_LONG);
+            flingFx.start();
+            return true;
+        }
+        // Swipe Left
+        if(motionEvent1.getX() - motionEvent2.getX() > 50){
+            Toast.makeText(this, "Left", Toast.LENGTH_LONG);
+            flingFx.start();
+            return true;
+        }
+        // Swipe Right
+        if(motionEvent2.getX() - motionEvent1.getX() > 50) {
+            Toast.makeText(this, "Right", Toast.LENGTH_LONG);
+            flingFx.start();
+            return true;
+        } else {
+            return true;
+        }
+    }
+
+    @Override
+    public void onLongPress(MotionEvent arg0) {
+
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public boolean onScroll(MotionEvent arg0, MotionEvent arg1, float arg2, float arg3) {
+
+        // TODO Auto-generated method stub
+
+        return false;
+    }
+
+    @Override
+    public void onShowPress(MotionEvent arg0) {
+
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public boolean onSingleTapUp(MotionEvent arg0) {
+
+        // TODO Auto-generated method stub
+
+        return false;
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent motionEvent) {
+
+        // TODO Auto-generated method stub
+
+        return gestureDetector.onTouchEvent(motionEvent);
+    }
+
+    @Override
+    public boolean onDown(MotionEvent arg0) {
+
+        // TODO Auto-generated method stub
+
+        return false;
     }
 
 }
